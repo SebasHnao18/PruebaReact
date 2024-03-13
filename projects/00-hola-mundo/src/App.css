@@ -49,11 +49,13 @@
     width: 120px;
 }
 
-.tw-followcard-button.is-following:hover{
-    background-color: rgb(255,102,102);
+.tw-followcard-button.is-following:hover {
+    background-color: rgb(255,0,0,0,178);
+    color: red;
+    border: 1px solid red;
 }
 
-.tw-followcard-button.is-following:hover{
+.tw-followcard-button.is-following:hover {
     background: #000;
 }
 
