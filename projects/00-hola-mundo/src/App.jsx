@@ -32,7 +32,8 @@ export function App() {
         users.map(users => {
           const {userName,name,isFollowing} = user
           return(
-            <TiwtterFollowCard 
+            <TiwtterFollowCard
+              key={userName} 
               userName={userName}
               initialIsFollowing={isFollowing}
             >
