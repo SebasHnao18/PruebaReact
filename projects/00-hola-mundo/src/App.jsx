@@ -1,18 +1,54 @@
 import { useState } from 'react'
 import './App.css'
 import { TiwtterFollowCard } from './TwitterFollowCard.jsx'
+//Usando arreglos
+const users =[
+  {
+    userName: 'midudev',
+    name: 'Miguel Angel Duran',
+    isFollowing: true
+  },
+  {
+    userName: 'pheralb',
+    name: 'Pablo H.',
+    isFollowing: false
+  },
+  {
+    userName: 'PacoHdezs',
+    name: 'Paco Hdez',
+    isFollowing: true
+  },
+  {
+    userName: 'TMChein',
+    name: 'Tomas Chein',
+    isFollowing: false
+  }
+]
 export function App() {
   //const [name, setName] = useState('midudev')
   return (
     <section className='App'>
-      <TiwtterFollowCard  userName="midudev" initialIsFollowing>
+      {
+        users.map(users => {
+          const {userName,name,isFollowing} = user
+          return(
+            <TiwtterFollowCard 
+              userName={userName}
+              initialIsFollowing={isFollowing}
+            >
+              {name}
+            </TiwtterFollowCard>
+          )
+        })
+      }
+      {/*<TiwtterFollowCard  userName="midudev" initialIsFollowing>
         Miguel Angel Duran 
       </TiwtterFollowCard>
       
       <TiwtterFollowCard  userName="pheralb">
         Pablo Hernandez
       </TiwtterFollowCard>
-      {/*Comentarios
+      Comentarios
       <button onClick={()=> setName('pedromichel')}>
         Cambio nombre
       </button>*/}
