@@ -1,12 +1,12 @@
 import {useState} from 'react'
-export function TiwtterFollowCard({children,userName}){
-    const [isFollowing, setIsFollowing] = useState(false)
+export function TiwtterFollowCard({children,userName, initialIsFollowing}){
+    const [isFollowing, setIsFollowing] = useState(initialIsFollowing)
 
     const text  = isFollowing ? 'Siguiendo' : 'Seguir'
     const buttonClassName = isFollowing 
         ? 'tw-followcard-button is-following' 
         : 'tw-followcard-button'
-
+    console.log('[TwtterFollowCard] render with userName: ', userName)
     const handleClick = () =>{
         setIsFollowing(!isFollowing)
     }  
@@ -26,6 +26,7 @@ export function TiwtterFollowCard({children,userName}){
           <aside>
               <button className={buttonClassName} onClick={handleClick}>
                   {text}
+                  <span className='tw-followCard-stopFollow'>Dejar de seguir</span>
               </button>
           </aside>
       </article>
