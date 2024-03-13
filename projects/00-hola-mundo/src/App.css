@@ -40,7 +40,6 @@
 
 .tw-followcard-button:hover {
     opacity: .8;
-    
 }
 
 .tw-followcard-button.is-following{
@@ -48,14 +47,11 @@
     background: transparent;
     color: #fff;
     width: 120px;
-
 }
 
 .tw-followcard-button.is-following:hover{
     background-color: rgb(255,102,102);
 }
-
-
 
 .tw-followcard-button.is-following:hover{
     background: #000;
