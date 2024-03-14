@@ -29,18 +29,15 @@ export function App() {
   return (
     <section className='App'>
       {
-        users.map(users => {
-          const {userName,name,isFollowing} = user
-          return(
-            <TiwtterFollowCard
+        users.map(({userName,name,isFollowing}) => (
+          <TiwtterFollowCard
               key={userName} 
               userName={userName}
               initialIsFollowing={isFollowing}
             >
               {name}
             </TiwtterFollowCard>
-          )
-        })
+        ))
       }
     </section>
 
