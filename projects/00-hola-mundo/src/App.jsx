@@ -14,7 +14,7 @@ const users = [
   },
   {
     userName: 'PacoHdezs',
-    name: 'Paco Hdez',
+    name: 'Paco Hernandez',
     isFollowing: true
   },
   {
