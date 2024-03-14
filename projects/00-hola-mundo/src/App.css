@@ -65,7 +65,6 @@
     display: none;
 }
 
-
 .tw-followcard-button.is-following:hover .tw-followcard-stopFollow{
     display: block;
 }

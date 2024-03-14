@@ -42,10 +42,13 @@ export function App() {
           )
         })
       }
+    </section>
 
-
-      
-      {/*<TiwtterFollowCard  userName="midudev" initialIsFollowing>
+  )
+}
+/*<TiwtterFollowCard isFollowing userName="elonmusk" name = "Elon Musk"/>
+<TiwtterFollowCard isFollowing userName="vxnder" name = "Vander Hart"/>*/
+/*<TiwtterFollowCard  userName="midudev" initialIsFollowing>
         Miguel Angel Duran 
       </TiwtterFollowCard>
       
@@ -55,10 +58,4 @@ export function App() {
       Comentarios
       <button onClick={()=> setName('pedromichel')}>
         Cambio nombre
-      </button>*/}
-    </section>
-
-  )
-}
-/*<TiwtterFollowCard isFollowing userName="elonmusk" name = "Elon Musk"/>
-<TiwtterFollowCard isFollowing userName="vxnder" name = "Vander Hart"/>*/
+      </button>*/
