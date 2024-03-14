@@ -6,7 +6,7 @@ export function TiwtterFollowCard({children,userName, initialIsFollowing}){
     const buttonClassName = isFollowing 
         ? 'tw-followcard-button is-following' 
         : 'tw-followcard-button'
-    console.log('[TwtterFollowCard] render with userName: ', userName)
+        
     const handleClick = () =>{
         setIsFollowing(!isFollowing)
     }  
