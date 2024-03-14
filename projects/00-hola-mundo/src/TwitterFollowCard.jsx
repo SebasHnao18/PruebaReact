@@ -6,7 +6,7 @@ export function TiwtterFollowCard({children,userName, initialIsFollowing}){
     const buttonClassName = isFollowing 
         ? 'tw-followcard-button is-following' 
         : 'tw-followcard-button'
-        
+
     const handleClick = () =>{
         setIsFollowing(!isFollowing)
     }  
@@ -25,7 +25,7 @@ export function TiwtterFollowCard({children,userName, initialIsFollowing}){
           </header>
           <aside>
               <button className={buttonClassName} onClick={handleClick}>
-                  <span  className='tw-followCard-text'>{text}</span>
+                  <span className='tw-followCard-text'>{text}</span>
                   <span className='tw-followCard-stopFollow'>Dejar de seguir</span>
               </button>
           </aside>
