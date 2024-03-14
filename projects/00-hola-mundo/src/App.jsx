@@ -1,10 +1,10 @@
 import './App.css'
-import { TiwtterFollowCard } from './TwitterFollowCard.jsx'
-//Usando arreglos
-const users =[
+import { TwitterFollowCard } from './TwitterFollowCard.jsx'
+
+const users = [
   {
     userName: 'midudev',
-    name: 'Miguel Angel Duran',
+    name: 'Miguel Ángel Durán',
     isFollowing: true
   },
   {
@@ -19,27 +19,26 @@ const users =[
   },
   {
     userName: 'TMChein',
-    name: 'Tomas Chein',
+    name: 'Tomas',
     isFollowing: false
   }
 ]
-export function App() {
-  //const [name, setName] = useState('midudev')
+
+export function App () {
   return (
     <section className='App'>
       {
-        users.map(({userName,name,isFollowing}) => (
-          <TiwtterFollowCard
-              key={userName} 
-              userName={userName}
-              initialIsFollowing={isFollowing}
-            >
-              {name}
-            </TiwtterFollowCard>
+        users.map(({ userName, name, isFollowing }) => (
+          <TwitterFollowCard
+            key={userName}
+            userName={userName}
+            initialIsFollowing={isFollowing}
+          >
+            {name}
+          </TwitterFollowCard>
         ))
       }
     </section>
-
   )
 }
 /*<TiwtterFollowCard isFollowing userName="elonmusk" name = "Elon Musk"/>
